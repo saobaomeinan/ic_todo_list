@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/list_id_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/font_black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list_title_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="list_title1234567980123456798012345679801234567980123456798012345679801234567980"
+                android:textColor="@color/font_black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/list_content_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="list_content12345679801234567980123456798012345679801234567980123456798012345679801234567980123456798012345679801234567980123456798012345679801234567980"
+                android:textColor="@color/font_black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/list_time_edt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="提醒时间：2002-09-03 21:15:00"
+                    android:textColor="@color/font_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/list_level_edt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="待办等级：中"
+                    android:textColor="@color/font_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/list_change_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00FF0000"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/list_change_ico" />
+
+            <ImageButton
+                android:id="@+id/list_delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00FF0000"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/list_delete_ico" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
